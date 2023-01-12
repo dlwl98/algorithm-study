@@ -5,7 +5,7 @@ R, C = map(int, stdin.readline().split())
 g = [list(stdin.readline().rstrip()) for _ in range(R)]
 dy, dx = (0, 0, -1, 1), (-1, 1, 0, 0)
 jh = [0, 0]
-f = []
+f = deque()
 for i in range(R):
     for j in range(C):
         if g[i][j] == 'J':
@@ -15,21 +15,17 @@ for i in range(R):
 
 
 def fire():
-    global f
-    visited = [[False] * C for _ in range(R)]
-    tmp = []
-    for y, x in f:
-        visited[y][x] = True
+    nf = len(f)
+    for _ in range(nf):
+        y, x = f.popleft()
         for k in range(4):
             ny = y + dy[k]
             nx = x + dx[k]
-            if ny < 0 or nx < 0 or ny >= R or nx >= C or visited[ny][nx]:
+            if ny < 0 or nx < 0 or ny >= R or nx >= C:
                 continue
-            if g[ny][nx] == '.' or g[ny][nx] == 'J':
+            if g[ny][nx] != '#' and g[ny][nx] != 'F':
                 g[ny][nx] = 'F'
-                visited[ny][nx] = True
-                tmp.append((ny, nx))
-    f = tmp
+                f.append((ny, nx))
 
 
 def bfs():
