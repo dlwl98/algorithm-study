@@ -1,6 +1,7 @@
 from sys import stdin
 from collections import deque
 
+
 N, M = map(int, stdin.readline().split())
 w = [list(map(int, stdin.readline().rstrip())) for _ in range(N)]
 visited = [[[int(1e9)] * 2 for _ in range(M)] for _ in range(N)]
