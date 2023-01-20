@@ -14,4 +14,9 @@ visited 배열을 3차원으로 만들어서 해결
 
 ## 9251 LCS
 dp를 이용하는 문제
+<br/>
 lcs : longest common subsequence
+
+## 15483 최소 편집
+dp문제
+어려웠음
