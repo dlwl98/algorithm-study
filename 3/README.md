@@ -11,3 +11,7 @@ visited 배열을 3차원으로 만들어서 해결
 
 ## 1107 리모컨
 누를수 있는 채널 다 누르기
+
+## 9251 LCS
+dp를 이용하는 문제
+lcs : longest common subsequence
