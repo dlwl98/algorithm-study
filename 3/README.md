@@ -20,3 +20,8 @@ lcs : longest common subsequence
 ## 15483 최소 편집
 dp문제
 어려웠음
+
+## 16235 나무 재테크
+구현문제
+<br/>
+2로 나누는거 빼먹어서 틀렸다
