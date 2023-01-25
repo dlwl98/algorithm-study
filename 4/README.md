@@ -8,3 +8,6 @@ bfs / 백트래킹
 조합(combinations) 문제
 <br/>
 bfs
+
+## 12100 2048 (Easy)
+실수하기 쉬운 문제
