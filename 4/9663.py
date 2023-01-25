@@ -19,24 +19,21 @@ def change(i, j):
     return changes
 
 
-def dfs(y, x, depth):
+def dfs(depth):
     global result
     if depth == N:
         result += 1
         return
-    for i in range(y, N):
-        if i != y:
-            x = 0
-        for j in range(x, N):
-            if can_put[i][j]:
-                changes = change(i, j)
-                dfs(i, j, depth + 1)
-                for a, b in changes:
-                    can_put[a][b] = True
+    for x in range(N):
+        if can_put[depth][x]:
+            changes = change(depth, x)
+            dfs(depth + 1)
+            for a, b in changes:
+                can_put[a][b] = True
 
 
 def solution():
-    dfs(0, 0, 0)
+    dfs(0)
     print(result)
 
 
