@@ -14,3 +14,8 @@ bfs
 
 ## 19237 어른 상어
 구현, 시뮬레이션
+
+## 16988 Baaaaaaaaaduk2 (Easy)
+bfs로 그룹 만들고
+<br/>
+combination 이용해 완전탐색
