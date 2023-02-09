@@ -8,7 +8,7 @@ bags = [int(stdin.readline().rstrip('\n')) for _ in range(K)]
 
 
 def sort_by_first(x, y):
-    return x[0] - y[0]큐
+    return x[0] - y[0]
 
 
 def solution():
