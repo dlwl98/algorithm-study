@@ -7,7 +7,6 @@ def solution():
     for coin in coins:
         if coin <= 10000:
             dp[coin] = 1
-
     for i in range(10001):
         for coin in coins:
             if i + coin <= 10000:

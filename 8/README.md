@@ -7,4 +7,4 @@ dp문제
 ## 2294 동전2
 dp문제
 <br/>
-indexError 주의
+동전 초기화 할 시 indexError 주의
