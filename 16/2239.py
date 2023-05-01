@@ -25,3 +25,4 @@ def go(n):
     sudoku[x][y] = 0
 
 go(0)
+# 123
